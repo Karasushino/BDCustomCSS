@@ -132,8 +132,14 @@ button[aria-label="Boost this server"] {
     background-color: rgba(1,1,1,.5); /* Tint color */
     background-blend-mode: multiply;
 }
-
+/*Removes weird Background color on popups*/
 .banner-2boKnS.popoutBanner-16rVDY
+{
+    background-color: rgba(1, 1, 1, 0) !important;
+}
+
+/*Removes weird Background color on popups*/
+.banner-2boKnS.popoutNoBannerPremium-2TQa6P
 {
     background-color: rgba(1, 1, 1, 0) !important;
 }
