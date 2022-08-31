@@ -1,0 +1,139 @@
+/*------------------------------------------------------
+Remove Stage Discovery Tab
+------------------------------------------------------ */
+#private-channels [href="/discovery"] {display: none}
+ 
+/*------------------------------------------------------
+Remove Library Tab
+------------------------------------------------------*/
+#private-channels [href="/library"] {display: none}
+[href="/store"] {display: none}
+
+/*------------------------------------------------------
+Remove Nitro Tab
+------------------------------------------------------*/
+#private-channels-2.clickable-1JJAn8 [href="/store"]
+{display: none}
+
+/* Hide Nitro gift button */
+button[aria-label="Send a gift"] {
+   display: none;
+}
+
+/* Hide annoying sticker popup window that appears when you type */
+.da-channelTextArea > .container-JHR0NT {
+    display: none;
+}
+
+/* Hide sticker picker button */
+button[aria-label="Open sticker picker"] {
+    display: none;
+}
+
+/* Hide GIF picker button */
+button[aria-label="Open GIF picker"] {
+    display: none;
+}
+
+/* Hide Boost button */
+button[aria-label="Boost this server"] {
+    display: none;
+}
+/*Custom CSS Hide ClearVision Stuff (Top Left)*/
+.typeWindows-2-g3UY>.wordmark-2u86JB:before {
+    display: none;
+}
+
+.typeWindows-2-g3UY>.wordmark-2u86JB:after {
+    display: none;
+}
+
+/*Adjust size of Home button for folder view */
+.styledGuildsAsChannels-DNHtg_ .wrapper-1_HaEi .homeIcon-r0w4ny {
+    width: 48px;
+    height: 48px;
+}
+/*Container under name Footer Text*/
+.container-YkUktl:before {
+    content: "Spice and Wolf";
+}
+/*Hide Version name of lower bottom*/
+.container-YkUktl:after {
+    display: none;
+}
+
+/* Hide sticker picker button */
+[aria-label="Nitro"] {
+    display: none;
+}
+/* Hide Nitro Boost Tab from Options */
+[aria-controls="nitro-server-boost-tab"]{
+    display: none;
+}
+/*Hide Annoying Explore Public Servers button */
+[aria-label="Explore Public Servers"]{
+    display: none;
+}
+
+.emojiItem-277VFM.emojiItemDisabled-3VVnwp
+{
+    filter: grayscale(0);
+}
+
+/*Remove weird gradient from Profile previews.*/
+.root-8LYsGj>.topSection-13QKHs {
+    background: rgba(0,0,0,.7);
+}
+
+.profileBanner-1owKI5 {
+    -webkit-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, transparent);
+    mask: linear-gradient(to bottom, rgba(0,0,0,0) 50%, transparent);
+}
+
+
+.userPopoutInnerWithBanner-wsoegj {
+    background: linear-gradient(transparent 120px,var(--profile-gradient-primary-color) 0,var(--profile-gradient-secondary-color));
+}
+
+.overlayBackground-arbZMT
+{
+    background: rgba(1,1,1,0.5);
+}
+
+/*Inner of Premium Themed profile*/
+.userPopoutInner-PA9zkU.userPopoutInnerWithTheme-71l1ON.userPopoutInnerWithBanner-wsoegj
+{
+    background-image: var(--background-image);
+    background: rgba(1,1,1,0.4);
+}
+
+/*Outer of Premium Themed profile*/
+.userPopoutThemed-3BZ4by.userPopout-3fydSP.profileColors-3Y0XaR
+{
+    background-image: var(--background-image);
+}
+
+/*Themed colors overwrite*/
+.userPopoutThemed-3BZ4by
+{
+    --profile-gradient-primary-color: rgba(1,1,1,1) ;
+    --profile-gradient-secondary-color: rgba(1,1,1,1) ;
+    --profile-gradient-overlay-color: transparent;
+    --profile-gradient-button-color: rgba(1,1,1,1);
+    --profile-avatar-border-color: rgba(1,1,1,1) ;
+    --profile-message-input-border-color: rgba(1,1,1,1) ;
+    
+}
+
+/*Change inner Pop up non premium*/
+.userPopoutInner-PA9zkU
+{
+    background-image: var(--background-image);
+    background-color: rgba(1,1,1,.5); /* Tint color */
+    background-blend-mode: multiply;
+}
+
+.banner-2boKnS.popoutBanner-16rVDY
+{
+    background-color: rgba(1, 1, 1, 0) !important;
+}
