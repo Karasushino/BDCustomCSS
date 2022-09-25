@@ -100,21 +100,50 @@ button[aria-label="Boost this server"] {
     background: rgba(1,1,1,0.5);
 }
 
-/*Inner of Premium Themed profile*/
-.userPopoutInner-PA9zkU.userPopoutInnerWithTheme-71l1ON.userPopoutInnerWithBanner-wsoegj
+/*Removes badges because useless shit but keep it in there for spacing*/
+.profileBadges-31rDHI.containerWithContent-2_V0PM.container-5SvbtF
 {
-    background-image: var(--background-image);
-    background: rgba(1,1,1,0.4);
+    background: transparent;
+}
+.clickable-28QF7i, .premiumIcon-3PLiGh.icon-1dGlZy /*Also removes booster icons*/
+{
+    display: none;
+}
+
+
+
+
+/*Inner of Premium Themed profile*/
+.userPopoutInner-1v4xcM.userPopoutInnerWithTheme-2lKyJh.userPopoutInnerWithBanner-24GX6I
+{
+    background-image: var(--background-image) !important;
+    background-position: var(--background-position) !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: var(--background-size);
+    background-attachment: fixed;
+    background-blend-mode: blend !important;
 }
 
 /*Outer of Premium Themed profile*/
-.userPopoutThemed-3BZ4by.userPopout-3fydSP.profileColors-3Y0XaR
+.userPopoutThemed-wGuRN3.userPopout-29jUdN.profileColors-3Y0XaR
 {
-    background-image: var(--background-image);
+    background-image: var(--background-image)!important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(1,1,1,.6)!important; /* Tint color */
+    background-blend-mode: multiply !important;
+    background-position: var(--background-position) !important;
+    background-size: var(--background-size);
+    background-attachment: fixed;
 }
 
 /*Themed colors overwrite*/
-.userPopoutThemed-3BZ4by
+.userPopoutThemed-wGuRN3
 {
     --profile-gradient-primary-color: rgba(1,1,1,1) ;
     --profile-gradient-secondary-color: rgba(1,1,1,1) ;
@@ -122,16 +151,40 @@ button[aria-label="Boost this server"] {
     --profile-gradient-button-color: rgba(1,1,1,1);
     --profile-avatar-border-color: rgba(1,1,1,1) ;
     --profile-message-input-border-color: rgba(1,1,1,1) ;
-    
 }
 
 /*Change inner Pop up non premium*/
-.userPopoutInner-PA9zkU
+.overlayBackground-2Zjm9f
 {
-    background-image: var(--background-image);
-    background-color: rgba(1,1,1,.5); /* Tint color */
-    background-blend-mode: multiply;
+    background-image: var(--background-image)!important;
+    background-color: rgba(1,1,1,.8)!important; /* Tint color */
+    background-blend-mode: multiply !important;
+    background-position: var(--background-position) !important;
+    background-size: var(--background-size);
+    background-attachment: fixed;
 }
+
+.userPopoutInner-1v4xcM.userPopoutInnerWithoutTheme-53VYav
+{
+ background-image: var(--background-image)!important;
+    background-color: rgba(1,1,1,.5)!important; /* Tint color */
+    background-blend-mode: multiply !important;
+    background-position: var(--background-position) !important;
+    background-size: var(--background-size);
+    background-attachment: fixed;
+}
+
+/*Input message box*/
+.messageInputContainer-2rGDH8
+{
+    border: var(--main-color);
+}
+/*Buttons Color user popup*/
+.buttonColor-XIRMbp
+{
+    background-color: var(--main-color);
+}
+
 /*Removes weird Background color on popups*/
 .banner-2boKnS.popoutBanner-16rVDY
 {
@@ -143,3 +196,56 @@ button[aria-label="Boost this server"] {
 {
     background-color: rgba(1, 1, 1, 0) !important;
 }
+
+/*Removes Background overlay for avatar*/
+/*Box in the middle*/
+/*.userPopout-3fydSP:not(.userPopoutThemed-3BZ4by)
+.overlayBackground-arbZMT {background: transparent;}*/
+
+/*Avatar*/
+.userPopout-3fydSP:not(.userPopoutThemed-3BZ4by) 
+.avatar-2OC07D {background: transparent; border-color: transparent;}
+
+.profileBanner-2zIsK7
+{
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.LKKneJCVRLbYQrEtNZ8g
+{
+    background-color: rgba(0,0,0,0) !important;
+}
+
+/*Work for the new Member since*/
+.discordMemberCreatedAtIconContainer-2NS-8S
+{
+    height: 24px;
+    width: 24px;
+    border-radius: 0px;
+    background-color: transparent;
+    color: #ecad65;
+    flex-shrink: 0
+}
+
+.heading-lg-medium-3gUJeM
+{
+    font-size: 16px;
+    font-style: var(--font-primary);
+    font-weight: 600;
+}
+
+/*Entire Member Since Container*/
+.connectedAccountContainer-SlCC-S.discordMemberCreatedAt-3htTfn
+{
+    display: yes;
+}
+
+.connectedAccountContainer-3aLMHJ.discordMemberCreatedAt-31OkT7
+{
+    display: none;
+}
+
+/*.connectedAccountContainer-3aLMHJ
+{
+    background: rgba(0,0,0,.15);
+}*/
