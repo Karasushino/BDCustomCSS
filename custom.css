@@ -110,11 +110,20 @@ button[aria-label="Boost this server"] {
     display: none;
 }
 
+/*Removes Icon from server has been boosted message, removes confety, removes boost progress of servers*/
+.iconContainer-2rPbqG, .cannonWrapper-2iHppQ, .container-2giAcK
+{
+    display: none;
+}
 
-
+/*Removes Boost this server button*/
+.item-1OdjEX.labelContainer-2vJzYL.colorPremium-vwmYZQ.colorDefault-CDqZdO
+{
+    display: none;
+}
 
 /*Inner of Premium Themed profile*/
-.userPopoutInner-1v4xcM.userPopoutInnerWithTheme-2lKyJh.userPopoutInnerWithBanner-24GX6I
+.userPopoutInner-1hXSeY.userProfileInner-3F03PX.userProfileInnerThemed-27tvAp
 {
     background-image: var(--background-image) !important;
     background-position: var(--background-position) !important;
@@ -122,13 +131,13 @@ button[aria-label="Boost this server"] {
     right: 0;
     bottom: 0;
     left: 0;
+    background-blend-mode: multiply !important;
     background-size: var(--background-size);
     background-attachment: fixed;
-    background-blend-mode: blend !important;
 }
 
 /*Outer of Premium Themed profile*/
-.userPopoutThemed-wGuRN3.userPopout-29jUdN.profileColors-3Y0XaR
+.userPopoutOuter-3AVBmJ
 {
     background-image: var(--background-image)!important;
     top: 0;
@@ -153,8 +162,8 @@ button[aria-label="Boost this server"] {
     --profile-message-input-border-color: rgba(1,1,1,1) ;
 }
 
-/*Change inner Pop up non premium*/
-.overlayBackground-2Zjm9f
+/*Change inner non custom*/
+.overlayBackground-1KgwVi
 {
     background-image: var(--background-image)!important;
     background-color: rgba(1,1,1,.8)!important; /* Tint color */
@@ -163,10 +172,10 @@ button[aria-label="Boost this server"] {
     background-size: var(--background-size);
     background-attachment: fixed;
 }
-
-.userPopoutInner-1v4xcM.userPopoutInnerWithoutTheme-53VYav
+/*Change inner with banner .userPopoutInnerWithoutTheme-3IBtvN.userPopoutInnerWithBanner-1jusp9, .userPopoutInnerNonPremium-303mw8*/
+.userPopoutInner-1hXSeY.userProfileInner-3F03PX, userProfileInnerWithBanner-3CJ1Og, .userProfileInnerNonPremium-1XjSjn
 {
- background-image: var(--background-image)!important;
+    background-image: var(--background-image)!important;
     background-color: rgba(1,1,1,.5)!important; /* Tint color */
     background-blend-mode: multiply !important;
     background-position: var(--background-position) !important;
@@ -211,6 +220,21 @@ button[aria-label="Boost this server"] {
     background-color: rgba(0,0,0,0) !important;
 }
 
+.badgeList-2pMvZX /*Hide Badgelist no one cares*/
+{
+    display: none;
+}
+
+.userProfileModalInner-3fh3QA /*Rightclick inspect inner background*/
+{
+    background-image: var(--background-image)!important;
+    background-color: rgba(1,1,1,.5)!important; /* Tint color */
+    background-blend-mode: multiply !important;
+    background-position: var(--background-position) !important;
+    background-size: var(--background-size);
+    background-attachment: fixed;
+}
+
 .LKKneJCVRLbYQrEtNZ8g
 {
     background-color: rgba(0,0,0,0) !important;
@@ -235,17 +259,24 @@ button[aria-label="Boost this server"] {
 }
 
 /*Entire Member Since Container*/
-.connectedAccountContainer-SlCC-S.discordMemberCreatedAt-3htTfn
-{
-    display: yes;
-}
 
 .connectedAccountContainer-3aLMHJ.discordMemberCreatedAt-31OkT7
 {
     display: none;
 }
 
-/*.connectedAccountContainer-3aLMHJ
+.perksModalContentWrapper-3RHugb, .content-2t8mBc
 {
-    background: rgba(0,0,0,.15);
-}*/
+    display: none;
+}
+
+.memberSinceContainer-2CBD23, .userInfoSectionHeader-2mYYun
+{
+    display: none;
+}
+
+/* Don't show blocked container for messages that are blocked*/
+.blockedSystemMessage-3FmE9n.container-x059i8.cozy-S5wsfF
+{
+    display: none;
+}
